@@ -1,0 +1,77 @@
+ul {
+  list-style: none;
+}
+
+.form-wrapper {
+  max-width: 50%;
+  margin: 0 auto;
+  font-size: 20px;
+  font-weight: bold;
+  background: #adcbfe;
+  border-radius: 10px;
+  padding: 5px 5px;
+}
+
+.enter-city {
+	color: #adcbfe;
+  padding: 10px 80px;
+	border: 1px soild #adcbfe;
+}
+
+.search-btn {
+	background: #adcbfe;
+  border: 1px solid #fff;
+  color: #fff;
+	padding: 10px 46px;
+	margin-left: 91%;
+}
+
+.wrapper {
+  margin: 20px auto 0px;
+  padding: 25px 0px;
+  border: 5px solid #fff;
+  border-radius: 30px;
+  max-width: 55%;
+  background-image: linear-gradient(to top left, #84b1fd, #d3e3ff);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+.date {
+  font-size: 44px;
+  color: #fff;
+}
+
+.inner-wrapper {
+	max-width: 75%;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  margin: 30px auto;
+}
+
+.temp {
+	font-size: 80px;
+  font-family: "Play", sans-serif;
+
+}
+
+.high-low, .humidity, .wind {
+	display: inline-block;
+	padding: 30px 35px;
+  text-align: center;
+  border-radius: 35px;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background: #adcbfe;
+}
+
+.humidity {
+	margin-right: 20px;
+  margin-left: 20px;
+}
+
+.emoji-wrapper {
+	color: #fff;
+  max-width: 85%;
+  margin: 0 auto;
+}
