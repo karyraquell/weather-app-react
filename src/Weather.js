@@ -34,10 +34,10 @@ export default function Weather() {
               <div className="col-6">
                 <ul>
                   <li>
-                    <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="rain"></img>
+                    <img className="weather-icon" src="http://openweathermap.org/img/wn/10d@2x.png" alt="rain"></img>
                   </li>
-                  <li>
-                    rain
+                  <li className="description">
+                    Rain
                   </li>
                 </ul>
               </div>
@@ -45,12 +45,12 @@ export default function Weather() {
                 <ul>
                   <li className="temp">
                     7
-                    <span>°</span>
-                    <button>C</button>
-                    <span>|</span>
-                    <button>F</button>
+                    <span className="symbol">°</span>
+                    <button className="units">C</button>
+                    <span className="pipe-symbol">|</span>
+                    <button className="units">F</button>
                   </li>
-                  <li>
+                  <li className="feels-like">
                     Feels like: 5°
                   </li>
                 </ul>

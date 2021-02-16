@@ -3,7 +3,7 @@ ul {
 }
 
 .form-wrapper {
-  max-width: 50%;
+  max-width: 60%;
   margin: 0 auto;
   font-size: 20px;
   font-weight: bold;
@@ -14,7 +14,7 @@ ul {
 
 .enter-city {
 	color: #adcbfe;
-  padding: 10px 80px;
+  padding: 10px 120px;
 	border: 1px soild #adcbfe;
 }
 
@@ -22,7 +22,7 @@ ul {
 	background: #adcbfe;
   border: 1px solid #fff;
   color: #fff;
-	padding: 10px 46px;
+	padding: 10px 62px;
 	margin-left: 91%;
 }
 
@@ -31,7 +31,7 @@ ul {
   padding: 25px 0px;
   border: 5px solid #fff;
   border-radius: 30px;
-  max-width: 55%;
+  max-width: 65%;
   background-image: linear-gradient(to top left, #84b1fd, #d3e3ff);
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
 }
@@ -48,10 +48,50 @@ ul {
   margin: 30px auto;
 }
 
-.temp {
-	font-size: 80px;
-  font-family: "Play", sans-serif;
+.weather-icon {
+  width: 180px;
+  position: relative;
+  top: -20px;
+  margin-left: 0%;
+}
 
+.description {
+  font-size: 25px;
+  position: relative;
+  margin-right: 10%;
+  top: -30px;
+}
+
+.temp {
+	font-size: 100px;
+  font-family: "Play", sans-serif;
+}
+
+.units {
+  font-size: 25px;
+  position: relative;
+  top: -57px;
+  border: none;
+  color:#fff;
+  background-color: transparent;
+  padding: 0;
+}
+
+.symbol {
+  font-size: 35px;
+  position: relative;
+  top: -50px;
+}
+
+.pipe-symbol {
+  font-size: 20px;
+  position: relative;
+  top: -61px;
+  margin: 0 1%;
+}
+
+.feels-like {
+  font-size: 20px;
 }
 
 .high-low, .humidity, .wind {
@@ -75,3 +115,13 @@ ul {
   max-width: 85%;
   margin: 0 auto;
 }
+
+ul {
+  padding: 0;
+}
+
+p {
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  }
