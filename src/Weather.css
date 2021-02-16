@@ -37,6 +37,7 @@ ul {
 }
 .date {
   font-size: 44px;
+  font-family: "Play", sans-serif;
   color: #fff;
 }
 
@@ -57,6 +58,7 @@ ul {
 
 .description {
   font-size: 25px;
+  font-family: "Play", sans-serif;
   position: relative;
   margin-right: 10%;
   top: -30px;
@@ -92,6 +94,7 @@ ul {
 
 .feels-like {
   font-size: 20px;
+  font-family: "Play", sans-serif;
 }
 
 .high-low, .humidity, .wind {
