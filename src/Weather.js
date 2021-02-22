@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import FormattedDate from "./FormattedDate";
 import axios from "axios"
 import "./Weather.css";
 
@@ -9,9 +10,11 @@ export default function Weather(props) {
     setWeatherData({
       ready: true,
       temperature: Math.round(response.data.main.temp),
-      date: "Friday January 15, 2021",
-      time: "10:15 A.M",
-      wind: 5,
+      feelsLike: Math.round(response.data.main.feels_like),
+      max: Math.round(response.data.main.temp_max),
+      min: Math.round(response.data.main.temp_min),
+      date: new Date(response.data.dt * 1000),
+      wind: Math.round(response.data.wind.speed),
       city: response.data.name,
       humidity: response.data.main.humidity,
       description: response.data.weather[0].description,
@@ -40,12 +43,7 @@ export default function Weather(props) {
               <li>
                 {weatherData.city}
               </li>
-              <li>
-                {weatherData.date}
-              </li>
-              <li>
-                {weatherData.time}
-              </li>
+              <FormattedDate date={weatherData.date} />
             </ul>       
             <div className="inner-wrapper">
               <div className="row">
@@ -69,7 +67,7 @@ export default function Weather(props) {
                       <button className="units">F</button>
                     </li>
                     <li className="feels-like">
-                      Feels like: 5°
+                      Feels like:{" "}{weatherData.feelsLike}°
                     </li>
                   </ul>
                 </div>
@@ -77,7 +75,7 @@ export default function Weather(props) {
               <div className="emoji-wrapper">
                 <div className="high-low">
                   <p>🌡</p>
-                  <p>8°/4°</p>
+                  <p>{weatherData.max}°/{weatherData.min}°</p>
                 </div>
                 <div className="humidity">
                   <p>💧</p>
