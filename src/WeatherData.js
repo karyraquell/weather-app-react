@@ -1,6 +1,7 @@
 import React from "react";
 import FormattedDate from "./FormattedDate";
 import WeatherIcon from "./WeatherIcon";
+import Temperature from "./Temperature"
 
 export default function WeatherData(props) {
 	return (
@@ -27,11 +28,7 @@ export default function WeatherData(props) {
 						<div className="col-6">
 							<ul>
 								<li className="temp">
-									{props.data.temperature}
-									<span className="symbol">°</span>
-									<button className="units">C</button>
-									<span className="pipe-symbol">|</span>
-									<button className="units">F</button>
+									<Temperature celsius={props.data.temperature} />
 								</li>
 								<li className="feels-like">
 									Feels like:{" "}{props.data.feelsLike}°
@@ -55,36 +52,6 @@ export default function WeatherData(props) {
 					</div>
 				</div>
 			</div>
-			<div className="forecast-wrapper">
-            <div>
-              <p>Next 5 Days</p>
-            </div>
-            <div>
-              <span>Friday</span>
-              <span>45°/33°</span>
-              <span>Showers</span>
-            </div>
-            <div>
-              <span>Saturday</span>
-              <span>50°/43°</span>
-              <span>Sunny</span>
-            </div>
-            <div>
-              <span>Sunday</span>
-              <span>45°/33°</span>
-              <span>Showers</span>
-            </div>
-            <div>
-              <span>Monday</span>
-              <span>45°/33°</span>
-              <span>Partly Cloudy</span>
-            </div>
-            <div>
-              <span>Tuesday</span>
-              <span>45°/33°</span>
-              <span>Partly Cloudy</span>
-            </div>
-          </div>
 		</div>	
-  );
-}
+ 	 );
+	}
